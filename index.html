@@ -1465,16 +1465,16 @@
     </main>
    </div>
   </div>
-   <!-- Supabase JS -->
+<!-- Supabase JS -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
-    const SUPABASE_URL = 'https://qkaqrnfiyngjvfckacdz.supabase.co';
-    const SUPABASE_ANON_KEY = 'sb_publishable_oBPxH8h2Cb9xvSgdF2aNrQ_sPcVwUqh';
+    window.LESdeskSupabaseUrl = 'https://kqaqnrfjv...supabase.co';
+    window.LESdeskSupabaseKey = 'sb_publishable_...';
 
-    const supabase = window.supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_ANON_KEY
+    window.supabaseClient = window.supabase.createClient(
+        window.LESdeskSupabaseUrl,
+        window.LESdeskSupabaseKey
     );
 </script>
   <script>
